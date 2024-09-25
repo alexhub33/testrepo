@@ -30,6 +30,12 @@ name: Example Workflow
 
 on:
   push:
+  pull_request:
+  schedule:
+    - cron: '0 0 * * *'    #note cron does not take 6 elements.  Only takes 5 elements
+                           #runs every day at 12am
+  workflow_dispatch:       # trigger the workflow from the UI
+
 
 jobs:
   echo:
