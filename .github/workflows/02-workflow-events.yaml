@@ -46,5 +46,5 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Echo message
-        run: echo "Hello, world!"
+      - name: Echo event name
+        run: echo "Event name: ${{ github.event_name }}"
