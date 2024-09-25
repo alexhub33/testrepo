@@ -29,8 +29,8 @@
 name: Example Workflow
 
 on:
-  push:
-  pull_request:
+ # push:
+ # pull_request:
  # schedule:
  #   - cron: '0 0 * * *'    #note cron does not take 6 elements.  Only takes 5 elements
                             #runs every day at 12am
