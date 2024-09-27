@@ -1,0 +1,22 @@
+name: 03 - Workflow Runners
+
+on:
+  push:
+    branches:
+      - main
+  # pull_request:
+  #   branches:
+  #     - main
+  # schedule:
+  #   - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show OS
+        run: | 
+          echo "This job is running on an Uubuntu runner"
+          echo "OS: ${{ runner.os }}"
+
