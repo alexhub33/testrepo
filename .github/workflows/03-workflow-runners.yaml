@@ -1,9 +1,8 @@
 name: 03 - Workflow Runners
 
 on:
-  push:
-    branches:
-      - main
+  push
+
   # pull_request:
   #   branches:
   #     - main
@@ -20,7 +19,7 @@ jobs:
     windows echo:
       runs-on: windows-latest
       steps:
-        - name: SHow OS
+        - name: Show OS
           run: | 
             echo "This job is running on a Windows runner"
             echo "Runner OS: $RUNNER_OS"
