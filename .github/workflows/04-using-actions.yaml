@@ -5,7 +5,14 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+    - name: Printing Folders
+      run: ls
 
+    #0. Checkout the code form the repository  (Workflows need to be defined in the same repository)
     #1. Isntall dependencies of our react app
     #2. Execute automated tests
+
 
