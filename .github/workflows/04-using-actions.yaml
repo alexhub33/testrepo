@@ -14,8 +14,8 @@ jobs:
           node-version: '20.x'
       - name: Install Dependencies
         run: npm ci
-        working-directory: 04-using-actions/react-app
-        
+        working-directory: ./04-using-actions/react-app
+
 
     #0. Checkout the code form the repository  (Workflows need to be defined in the same repository)
     #1. Isntall dependencies of our react app
