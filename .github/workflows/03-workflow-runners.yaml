@@ -12,12 +12,13 @@ on:
   workflow_dispatch:
 
 jobs:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Show OS
-        run: | 
-          echo "This job is running on an Uubuntu runner"
-          echo "OS: ${{ runner.os }}"
+    ubuntu-echo:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Show OS
+          run: | 
+            echo "This job is running on an Uubuntu runner"
+            echo "OS: ${{ runner.os }}"
     windows echo:
       runs-on: windows-latest
       steps:
